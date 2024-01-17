@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #2a2a2a;
+  font-family: 'Poppins';
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  height: 100vh;
+  width: 33%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#infoCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1919;
+  color: white;
+  height: 80%;
+  width: 80%;
+  border-radius: 20px;
+  padding: 0px 18px;
+}
+#pp {
+  height: 200px;
+  width: 200px;
+  border-radius: 1000px;
+  margin: 4px 0px;
+}
+#bio {
+  text-align: center;
+  margin: 4px 0px;
+}
+#email {
+  margin: 4px 0px;
+}
+#name {
+  margin: 4px 0px;
+}
+#location {
+  margin: 4px 0px;
+}
+#login {
+  margin: 4px 0px;
+}
+#fnf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#followingCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  margin: 4px 8px;
+  /* background-color: coral; */
+}
+#followersCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  margin: 4px 8px;
+  /* background-color: firebrick; */
+}
+#socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#socials a {
+  text-decoration: none;
+  color: white;
+}
+#socials a i {
+  font-size: 25px;
+  margin: 4px 12px;
+}
+#repo {
+  min-height: 100vh;
+  width: 67%;
+  padding: 40px 12px;
+}
+.title{
+    padding: 0px 8px;
+    margin: 12px 0px;
+}
+.singleRepo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: #1b1919;
+  padding: 16px 16px;
+  border-radius: 20px;
+}
+.repoName {
+  margin: 4px 0px;
+}
+.repoBio {
+  margin: 4px 0px;
+}
+.repoMade {
+  margin: 4px 0px;
+}
+.linker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0px;
+}
+.star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 16px;
+}
