@@ -26,7 +26,8 @@ fetch(profileUrl)
     myEmail.textContent = data.email;
     myPP.setAttribute("src", data.avatar_url);
     myX.setAttribute("href", `https://x.com/${data.twitter_username}`);
-  });
+  })
+  .catch((e) => console.error('Error msg = ', e));
 
 fetch(reposUrl)
   .then((rawArr) => {
@@ -42,7 +43,7 @@ fetch(reposUrl)
       repoName.classList.add('repoName')
 
       const repoBio=document.createElement('p')
-      repoBio.textContent=repo?.description
+      repoBio.textContent=repo?.description//html ko desc ko satta ma API bata desc aauchha
       repoBio.classList.add('repoBio')
 
       const repoMade=document.createElement('p')
@@ -61,6 +62,15 @@ fetch(reposUrl)
       starClass.classList.add('starClass')
       star.appendChild(starClass)
 
+      const watchers=document.createElement('div')
+      watchers.innerHTML=' <i class="ri-eye-fill"></i>'
+      watchers.classList.add('watchers')
+
+      const watchClass=document.createElement('p')
+      watchClass.textContent=repo.watchers_count
+      watchClass.classList.add('watchClass')
+      watchers.appendChild(watchClass)
+
       const link=document.createElement('div')
       link.innerHTML='<i class="ri-link"></i>'
       link.classList.add('link')
@@ -70,6 +80,11 @@ fetch(reposUrl)
       linkClass.setAttribute('href',repo.html_url)
       link.appendChild(linkClass)
       
+      linker.appendChild(star)
+      linker.appendChild(link)
+      linker.appendChild(watchers)
+      
+      
       singleRepo.appendChild(repoName)
       singleRepo.appendChild(repoBio)
       singleRepo.appendChild(repoMade)
@@ -78,4 +93,6 @@ fetch(reposUrl)
 
       document.querySelector('#repo').appendChild(singleRepo)
     });
-  });
+  })
+    .catch((error) => console.error('Error fetching repositories:', error));
+  
