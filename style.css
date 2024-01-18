@@ -258,6 +258,15 @@ margin: 0px 4px;
   #socials a i{
     margin: 2px 4px;
   }
+  .watchers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 2px;
+  }
+  .watchClass{
+    margin: 0px 4px;
+  }
 }
 
 
