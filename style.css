@@ -233,5 +233,31 @@ margin: 0px 4px;
     width: 70px;
   }
 }
+@media (width< 450px){
+  #pp{
+    height: 100px;
+    width: 100px;
+  }
+  #location{
+    font-size: 8px;
+  }
+  #followingCont{
+    margin: 2px 0px;
+    font-size: 8px;
+    width: 50px;
+  }
+  #followersCont{
+    margin: 2px 0px;
+    font-size: 8px;
+    width: 50px;
+  }
+  #socials{
+    background-color: aqua;
+    width: 100px;
+  }
+  #socials a i{
+    margin: 2px 4px;
+  }
+}
 
 
