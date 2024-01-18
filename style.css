@@ -56,6 +56,7 @@ body {
 }
 #name {
   margin: 4px 0px;
+  text-align: center;
 }
 #location {
   margin: 4px 0px;
@@ -173,3 +174,64 @@ margin: 0px 4px;
   text-decoration: none;
   color: white;
 }
+
+@media (width< 1024px){
+  #infoCont{
+    padding: 0px 8px;
+  }
+}
+#followingCont{
+  margin: 2px 4px;
+}
+#followersCont{
+  margin: 2px 4px;
+}
+
+@media (width< 768px){
+  #infoCont{
+    padding: 0px 8px;
+  }
+  #pp{
+    height: 110px;
+    width: 110px;
+  }
+  #name{
+    font-size: medium;
+  }
+  #login{
+    font-size: medium;
+  }
+  #location{
+    font-size: medium;
+  }
+  #followingCont{
+    margin: 2px 8px;
+    font-size: small;
+    width: 70px;
+  }
+  #followersCont{
+    margin: 2px 8px;
+    font-size: small;
+    width: 70px;
+  }
+  #socials{
+    margin-top: 20px;
+  }
+}
+@media (width< 600px){
+  #location{
+    font-size: small;
+  }
+  #followingCont{
+    margin: 2px 2px;
+    font-size: 8px;
+    width: 70px;
+  }
+  #followersCont{
+    margin: 2px 2px;
+    font-size: 8px;
+    width: 70px;
+  }
+}
+
+
