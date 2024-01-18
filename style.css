@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-  background-color: #2a2a2a;
+  background-image:linear-gradient(to right,#000000,#434343,black);
   font-family: 'Poppins';
 }
 
@@ -105,6 +105,7 @@ body {
   height: 100vh;
   width: 67%;
   padding: 40px 12px;
+  overflow-y: scroll;
   /* background-color: brown; */
 }
 .title{
@@ -119,7 +120,14 @@ body {
   background-color: #1b1919;
   padding: 16px 16px;
   border-radius: 20px;
-  margin: 8px 0px;
+  margin: 16px 0px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 4px 4px 10px rgb(85, 79, 79);
+}
+.singleRepo:hover{
+  scale: 101%;
+  transition-duration: 150ms;
 }
 .repoName {
   margin: 4px 0px;
