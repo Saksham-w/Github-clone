@@ -14,6 +14,7 @@ body {
 }
 
 #main {
+  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +23,7 @@ body {
 }
 
 #info {
-  height: 100vh; 
+  height: 100vh;
   width: 33%;
   /* background-color: aqua; */
   display: flex;
@@ -40,6 +41,7 @@ body {
   width: 80%;
   border-radius: 20px;
   padding: 0px 18px;
+  margin-top: 10px;
 }
 #pp {
   height: 200px;
@@ -114,6 +116,7 @@ body {
     margin: 12px 0px;
 }
 .singleRepo {
+  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -174,99 +177,35 @@ margin: 0px 4px;
   text-decoration: none;
   color: white;
 }
+@media (width < 768px){
+ #main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ #info{
+  width: 100%;
+  /* background-color: aqua; */
+ }
+ #repo{
+  width: 90%;
+  height: 100%;
+  overflow-y:hidden;
+  /* background-color: aqua; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+ }
+ .singleRepo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0px;
+ }
+}
 
-@media (width< 1024px){
-  #infoCont{
-    padding: 0px 8px;
-  }
-}
-#followingCont{
-  margin: 2px 4px;
-}
-#followersCont{
-  margin: 2px 4px;
-}
 
-@media (width< 768px){
-  #infoCont{
-    padding: 0px 8px;
-  }
-  #pp{
-    height: 110px;
-    width: 110px;
-  }
-  #name{
-    font-size: medium;
-  }
-  #login{
-    font-size: medium;
-  }
-  #location{
-    font-size: medium;
-  }
-  #followingCont{
-    margin: 2px 8px;
-    font-size: small;
-    width: 70px;
-  }
-  #followersCont{
-    margin: 2px 8px;
-    font-size: small;
-    width: 70px;
-  }
-  #socials{
-    margin-top: 20px;
-  }
-}
-@media (width< 600px){
-  #location{
-    font-size: small;
-  }
-  #followingCont{
-    margin: 2px 2px;
-    font-size: 8px;
-    width: 70px;
-  }
-  #followersCont{
-    margin: 2px 2px;
-    font-size: 8px;
-    width: 70px;
-  }
-}
-@media (width< 450px){
-  #pp{
-    height: 100px;
-    width: 100px;
-  }
-  #location{
-    font-size: 8px;
-  }
-  #followingCont{
-    margin: 2px 0px;
-    font-size: 8px;
-    width: 50px;
-  }
-  #followersCont{
-    margin: 2px 0px;
-    font-size: 8px;
-    width: 50px;
-  }
-  #socials{
-    /* background-color: aqua; */
-    width: 100px;
-  }
-  #socials a i{
-    margin: 2px 4px;
-  }
-  .watchers{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 2px;
-  }
-  .watchClass{
-    margin: 0px 4px;
-  }
-}
 
 

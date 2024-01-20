@@ -34,12 +34,11 @@ fetch(reposUrl)
     return rawArr.json();
   })
   .then((arr) => {
-    // console.log(typeof arr[0]?.language)
     arr.map((repo) => {
       const singleRepo = document.createElement("a");
       singleRepo.setAttribute("href", repo.html_url);
       singleRepo.setAttribute("target", "_blank");
-      singleRepo.classList.add("singleRepo");
+      singleRepo.classList.add("singleRepo"); // css adding
 
       const repoName = document.createElement("h2");
       repoName.textContent = repo.name; //first repository ko thau ma API bata Github repo ko nam aauchha
